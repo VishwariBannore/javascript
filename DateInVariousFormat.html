@@ -1,0 +1,24 @@
+<html>
+    <head>
+        <h3>Day 2 Assignment 3</h3>
+       
+    </head>
+    <body>
+        <script>
+           document.write("Display date in various format : ");
+           document.write("<br>");
+           document.write("<br>");
+
+           var current_Date = new Date();
+           var year = current_Date.getFullYear();
+           var month = current_Date.getMonth();
+           var day = current_Date.getDate();
+           month = month +1;
+
+           document.write(month+ " - "+day+ " - "+year);document.write("<br>");
+           document.write(month+ " / "+day+ " / "+year);document.write("<br>");
+           document.write(day+ " - "+month+ " - "+year);document.write("<br>");
+           document.write(day+ " /  "+month+ " / "+year);document.write("<br>");
+        </script>
+    </body>
+</html>

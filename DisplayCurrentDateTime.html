@@ -1,0 +1,31 @@
+<html>
+    <head>
+        <h3>Day 2 Assignment 1</h3>
+       
+    </head>
+    <body>
+        <script>
+            document.write("Print current day and time : ");
+            document.write("<br>");
+            var current_date = new Date();
+            // Display current day
+            var today = current_date.getDay();
+            var weekday = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
+            document.write("Today is : " + weekday[today]);
+            document.write("<br>");
+
+            //Display current time
+            var hours = current_date.getHours();
+            var minutes = current_date.getMinutes();
+            var ampm = hours >=12 ? 'PM' : 'AM';
+            hours = hours%12;
+            hours = hours ? hours :12;
+            minutes = minutes <10?'0'+minutes:minutes;
+            var current_Time = hours + " " + ampm + " : " + minutes + " : " +current_date.getMilliseconds();
+            document.write("Current time is :" + current_Time);
+
+
+        </script>
+    </body>
+
+</html>
