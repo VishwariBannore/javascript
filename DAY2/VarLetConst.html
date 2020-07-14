@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Difference between var, let, const</title>
+</head>
+<body>
+    <h3>Difference between var, let, const</h3>
+    <script>
+        // var has scope globally, it can be redeclared and updated without giving an error
+        var num = 5;
+        console.log("Number declared as var :: " +num);
+        num = 6;
+        console.log("Updated value of num var :: " +num);
+        var num = 7;
+        console.log("Redeclared value of num var :: " +num);
+
+        // let is used within the block and has scope within it only. It can be updated but not redeclared
+        {
+            let welcomeString = "Hello!!!";
+            console.log("let welcome String :: "+welcomeString);
+            welcomeString = "Welcome!!!";
+            console.log("Updated welcome String is :: "+welcomeString);
+        }
+
+        // const is used within block and are block scoped. It cannot be redcalred and updated.
+        const comName = "ABC";
+        console.log("Company Name :: "+comName);
+    </script>
+</body>
+</html>
