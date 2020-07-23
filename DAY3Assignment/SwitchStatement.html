@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Switch Statement</title>
+</head>
+<body>
+    <h5>Switch Statement</h5>
+    <script>
+        let marks = prompt("Enter Marks : ");
+        let grade;
+        if(marks>50)
+        {
+            grade = "A";
+        }
+        else
+        {
+            grade = "B";
+        }
+        switch (grade) {
+            case "A":
+                console.log("Marks are "+marks+" and Grade is "+grade);
+                break;
+            case "B":
+                console.log("Marks are "+marks+" and Grade is "+grade);
+                break;
+        
+            default:
+                console.log("Kindly enter valid marks...")
+                break;
+        }
+    </script>
+</body>
+</html>
